@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:ital,wght@0,300;0,500;1,400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white-color: rgba(223, 221, 221, 1);
+  --opaque-color: #fff;
+  --black-color: rgba(23, 23, 23, 1);
+  --opaque-black: rgba(32, 32, 32, 1);
+  --background-color: #1e1e1e;
+  --blueish-color: rgb(36, 36, 100);
+  --golden-color: rgba(210, 173, 18, 1);
+}
+
+body,
+html {
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  overflow-x: hidden;
+}
+
+#container {
+  padding: 1rem 1.3rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100vh;
+  width: 400px;
+  background-color: var(--opaque-color);
+  box-shadow: -16px 20px 22px -7px rgba(25, 25, 25, 0.2);
+}
+
+#container .fish-info {
+  color: var(--opaque-color) !important;
+}
+
+#fish-name {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 2rem 0;
+}
+
+#fish-bio-data .fish-description {
+  padding: 2rem;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+#fish-bio-data .fish {
+  padding-left: 2rem;
+  /* padding-bottom: 2rem; */
+  font-weight: bold;
+}
+#fish-bio-data .fish span {
+  font-weight: normal;
+}
+
+#fish-bio-data #fishf-description {
+  padding: 2rem;
+  font-size: 1.2rem;
+  text-align: left;
+}
