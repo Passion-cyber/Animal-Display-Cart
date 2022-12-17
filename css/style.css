@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 :root {
@@ -21,7 +22,7 @@ html {
   font-size: 10px;
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
-  background-color: var(--black-color);
+  background-color: var(--blueish-color);
   overflow-x: hidden;
 }
 
@@ -36,37 +37,44 @@ html {
   width: 400px;
   background-color: var(--background-color);
   color: var(--opaque-color);
-  box-shadow: -16px 20px 22px -7px rgba(25, 25, 25, 0.2);
+  border: 2px solid gray;
+  z-index: 99;
+  box-shadow: -16px 20px 22px -7px rgba(255, 255, 255, 0.2);
 }
 
-#container .fish-info {
-  color: var(--opaque-color) !important;
+#fish-image img {
+  width: 100%;
+  border-radius: 5px;
+  z-index: 1;
 }
 
 #fish-name {
   font-size: 2rem;
   font-weight: bold;
-  padding: 2rem 0;
+  color: var(--golden-color);
   padding: 2rem;
 }
 
 #fish-bio-data .fish-description {
   padding: 2rem;
   font-size: 1.2rem;
-  text-align: left;
+  text-align: justify;
+  font-style: italic;
 }
 
 #fish-bio-data .fish {
   padding-left: 2rem;
-  /* padding-bottom: 2rem; */
   font-weight: bold;
 }
+
 #fish-bio-data .fish span {
   font-weight: normal;
 }
 
-#fish-bio-data #fishf-description {
+#fish-bio-data #fishy-description {
   padding: 2rem;
   font-size: 1.2rem;
-  text-align: left;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-bottom: 2rem;
 }
