@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:ital,wght@0,300;0,500;1,400&display=swap");
 
+
+/* Global Style Reset */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* overflow-x: hidden; */
 }
 
+
+/*  Variable Scope */
 :root {
   --white-color: rgba(223, 221, 221, 1);
   --opaque-color: #fff;
@@ -17,6 +20,7 @@
   --golden-color: rgba(210, 173, 18, 1);
 }
 
+/*  Body Styling */
 body,
 html {
   font-size: 10px;
@@ -26,6 +30,8 @@ html {
   overflow-x: hidden;
 }
 
+
+/*  Core Styling */
 #container {
   padding: 1rem 1.3rem;
   margin: auto;
@@ -34,7 +40,7 @@ html {
   justify-content: flex-start;
   flex-direction: column;
   height: 100vh;
-  width: 400px;
+  width: 370px;
   background-color: var(--background-color);
   color: var(--opaque-color);
   border: 2px solid gray;
@@ -45,7 +51,6 @@ html {
 #fish-image img {
   width: 100%;
   border-radius: 5px;
-  z-index: 1;
 }
 
 #fish-name {
