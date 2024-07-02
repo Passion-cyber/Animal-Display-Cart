@@ -1,1 +1,0 @@
-// Added a script file for Javascript
